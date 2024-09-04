@@ -13,7 +13,7 @@ function Admin() {
 
   const fetchAvailability = async (userId) => {
     try {
-      const response = await axios.get(`//https://backend-qm1n.onrender.com/api/availability/${userId}`);
+      const response = await axios.get(`https://backend-qm1n.onrender.com/api/availability/${userId}`);
       setAvailability(response.data);
     } catch (error) {
       console.error('Error fetching availability:', error);
